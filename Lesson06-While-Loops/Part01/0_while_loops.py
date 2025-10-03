@@ -35,15 +35,35 @@ while condition (test variable):
 # Sum of digits
 # Take a user input as int, and sum the digits of it
 
-number = input("Enter a number: ") #1234
-sum = 0
+# number = input("Enter a number: ") #1234
+# sum = 0
 # for char in number:
 #     print(f"{char} {type(char)}")
 #     sum += int(char)
 # print(f"Tota {sum}")
 
-i = 0
-while i < len(number):
-    sum += int(number[i])
-    i += 1
-print(f"Total: {sum}")
+# i = 0
+# while i < len(number):
+#     sum += int(number[i])
+#     i += 1
+# print(f"Total: {sum}")
+
+# Algorithm - count digits (as ints)
+# n = int(input("Enter a number: "))
+# number = n
+# count = 0
+# while number > 0:
+#     # Get the last digit
+#     digit = number % 10
+#     count += digit # Add to sum
+#     number = number // 10 # Remove the last digit
+# print(f"The sum of digits {n}: {sum}")
+
+# Algorithm - count digits (as ints)
+number = 54321
+n = number
+count = 0
+while number > 0:
+    count += 1
+    number = number // 10
+print(f"The number of digits {n}: {count}")
